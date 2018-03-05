@@ -16,6 +16,7 @@
    if (request.getParameter("chapterNo") == null || request.getParameter("questionNo") == null || request.getParameter("title") == null) {
        out.println("<script>window.location.replace(\"" + request.getRequestURL() + "?chapterNo=" + chapter + "&questionNo=" + question + "&title=" + title + "\")</script>");
    }
+   
    QuestionBeanID.setMode("Display"); 
    QuestionBeanID.setChapterNo(Integer.parseInt(chapter));
    QuestionBeanID.setQuestionNo(Integer.parseInt(question));
